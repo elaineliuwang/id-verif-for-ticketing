@@ -1,0 +1,11 @@
+<svg width="400" height="240" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0074cc" />
+      <stop offset="100%" stop-color="#5a40dd" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#grad)" rx="24" />
+  <text x="32" y="120" font-family="Inter, sans-serif" font-size="36" fill="white" font-weight="700">Eras Tour</text>
+  <text x="32" y="160" font-family="Inter, sans-serif" font-size="18" fill="rgba(255,255,255,0.85)">Live at Gillette Stadium</text>
+</svg>
