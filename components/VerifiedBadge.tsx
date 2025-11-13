@@ -20,7 +20,7 @@ export const VerifiedBadge = ({ subtle = false }: VerifiedBadgeProps) => {
     <span className={`inline-flex items-center gap-1 rounded-full font-semibold shadow shadow-fair-blue/30 ${wrapperStyles}`}>
       <ShieldCheck className={`h-3.5 w-3.5 ${subtle ? 'text-fair-blue' : 'text-white'}`} />
       <span className={subtle ? 'text-fair-blue' : 'text-white'}>
-        VerifID{verificationToken ? ` · ${verificationToken}` : ''}
+        VerifID{!subtle && verificationToken ? ` · ${verificationToken}` : ''}
       </span>
     </span>
   );

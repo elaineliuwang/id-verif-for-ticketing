@@ -92,11 +92,11 @@ export default function LandingPage() {
             <div className="rounded-2xl border border-dashed border-fair-blue/30 bg-fair-blue/5 px-5 py-4 text-sm text-fair-navy/70">
               <p className="font-semibold text-fair-navy">Why Ticketmaster needs VerifID</p>
               <p className="mt-2">
-                Each verification issues a secure token Ticketmaster can trust across queues. No IDs stored—just proof that every entry belongs to a unique human.
+                Each verification issues a secure token Ticketmaster can trust across queues. No IDs stored, just proof that every entry belongs to a unique human.
               </p>
             </div>
             <div className="rounded-2xl bg-fair-blue/10 px-5 py-4 text-sm text-fair-blue">
-              <p className="font-semibold">Drop Day Checklist</p>
+              <p className="font-semibold">Checklist:</p>
               <ol className="mt-2 space-y-2">
                 <li>1. Complete VerifID once.</li>
                 <li>2. Rejoin Ticketmaster priority queues instantly.</li>

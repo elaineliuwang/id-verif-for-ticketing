@@ -9,12 +9,20 @@ Our proposed solution applies this idea to ticketing. We introduce an identity-b
 
 ## Tech Stack
 
-- Next.js (App Router) + React
+**Current MVP (Frontend Demo):**
+- Next.js (App Router) + React 18
 - TypeScript + Tailwind CSS
+- Framer Motion (UI animations)
+- lucide-react (icon set)
+- *Note: Frontend-only mock; no backend, no persistence, no actual ID processing*
 
-to implement: 
-- hashlib for storing data privately
-- numpy for queue behavior, currently mocking with framer motion
+**Prototype Implementation:**
+- **Next.js API Routes** for backend verification endpoints (builds on current Next.js setup)
+- **Node.js crypto** (built-in) for hashing ID identifiers (privacy-preserving storage)
+- **TypeScript** for queue behavior simulation and verification logic (extends current TypeScript codebase)
+- All data will be simulated—no real personal data collected
+- *All components can be built incrementally on top of the existing frontend mock*
+
 
 ## Launching the App with Yarn
 

@@ -23,13 +23,21 @@ export const EventCard = ({ event, index }: EventCardProps) => {
       className="group flex flex-col overflow-hidden rounded-3xl bg-white/80 p-6 shadow-card ring-1 ring-black/5 backdrop-blur"
     >
       <div className="relative h-40 w-full overflow-hidden rounded-2xl bg-fair-blue/5">
-        <Image
-          src={event.heroImage}
-          alt={event.name}
-          fill
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
-          sizes="(max-width: 768px) 100vw, 50vw"
-        />
+        {event.heroImage.endsWith('.svg') ? (
+          <img
+            src={event.heroImage}
+            alt={event.name}
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        ) : (
+          <Image
+            src={event.heroImage}
+            alt={event.name}
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        )}
       </div>
 
       <div className="mt-5 flex-1">
